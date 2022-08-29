@@ -15,9 +15,9 @@
 ![画像2](/readme-img/SdkTypes.png)
 
 ## 動作環境
-* MacOS Mojave v10.14.6 (18G103)
-* Android studio: 3.4.1
-* Simulator: Pixel 2 Android OS Version 10
+* MacOS Monterey version 12.5
+* Android Studio Chipmunk | 2021.2.1 Patch 2
+* Pixel 2 - Android 13 (Simulator)
 
 ※上記内容で動作確認をしています
 
@@ -46,7 +46,7 @@
 * 下記リンクをクリックしてプロジェクトをダウンロードします
  * https://github.com/NIFCLOUD-mbaas/android_camera_demo/archive/master.zip
 * ダウンロードしたプロジェクトを解凍します
-* AndroidStudio を開きます、「Open an existing Android Studio project」をクリックして解凍したプロジェクトを選択します
+* AndroidStudio を開きます、「Open」をクリックして解凍したプロジェクトを選択します
 
 ![画像6](/readme-img/android_studio.png)
 
@@ -56,19 +56,15 @@
 
 ### 3. SDKの導入（実装済み）
 
-※このサンプルアプリには既にSDKが実装済み（下記手順）となっています。（ver.3.0.2)<br>　最新版をご利用の場合は入れ替えてご利用ください。
+※このサンプルアプリには既にSDKが実装済み（下記手順）となっています。（ver.4.1.0)<br>　最新版をご利用の場合は入れ替えてご利用ください。
 
 * SDKダウンロード
 SDKはここ（[SDK リリースページ](https://github.com/NIFCLOUD-mbaas/ncmb_android/releases)）から取得してください.
-  - NCMB.jarファイルがダウンロードします。
 * SDKをインポート
-  - app/libsフォルダにNCMB.jarをコピーします
-* 設定追加
-  - app/build.gradleファイルに以下を追加します
+  - app/build.gradleに以下を追加します。
 ```gradle
 dependencies {
-    implementation 'com.google.code.gson:gson:2.3.1'
-    implementation files('libs/NCMB.jar')
+  implementation 'com.nifcloud.mbaas:ncmb_android:4.1.0'
 }
 ```
   - androidManifestの設定
