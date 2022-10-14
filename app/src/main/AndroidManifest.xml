@@ -12,6 +12,7 @@
         android:name="com.nifcloud.mbaas.core.NCMBApplicationController" >
 
         <activity
+            android:exported="true"
             android:name="mbaas.com.nifcloud.ncmbcameraquickstart.MainActivity"
             android:label="@string/app_name" >
 
